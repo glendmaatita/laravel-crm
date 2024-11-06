@@ -4,7 +4,7 @@ name: Main Workflow - Build docker and push to docker hub
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
