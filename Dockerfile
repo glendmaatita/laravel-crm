@@ -13,7 +13,7 @@ RUN mv composer.phar /usr/local/bin/composer
 FROM composer_deps as php_deps
 # install php dependencies
 RUN pecl install redis
-RUN docker-php-ext-install calendar xml gettext gd zip pdo pdo_mysql mysqli opcache
+RUN docker-php-ext-install intl calendar xml gettext gd zip pdo pdo_mysql mysqli opcache
 RUN docker-php-ext-enable redis
 RUN docker-php-ext-configure gd
 
